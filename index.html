@@ -1,11 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>xuanyu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>罗晗 | AI Research</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>玄鱼的个人主页</h1>
-    <h1>Hello ~</h1>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">LH</a>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#publications">论文</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">你好，我是</p>
+                <h1 class="hero-name">罗晗</h1>
+                <p class="hero-title">AI Researcher · Agent &amp; LLM</p>
+                <p class="hero-desc">专注于智能体（Agent）与大语言模型（LLM）研究，探索 Agentic RL、RAG 和多智能体系统</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">查看项目</a>
+                    <a href="#contact" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-avatar">
+                    <div class="avatar-placeholder">LH</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🎓</div>
+                    <h3>硕士在读</h3>
+                    <p>中国海洋大学 · 2025.9 - 2027.6</p>
+                    <p class="about-detail">研究方向：Agentic RL</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">📚</div>
+                    <h3>本科毕业</h3>
+                    <p>武汉大学 · 2021.9 - 2025.6</p>
+                    <p class="about-detail">排名 2/65，Top 5%</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🔬</div>
+                    <h3>研究兴趣</h3>
+                    <p>Agent · LLM · RL</p>
+                    <p class="about-detail">智能体系统、强化学习与大模型</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title">技术栈</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🤖</span>
+                        Agent 开发
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Transformer</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">ReAct</span>
+                        <span class="skill-tag">Tool-use</span>
+                        <span class="skill-tag">Function Calling</span>
+                        <span class="skill-tag">LangGraph</span>
+                        <span class="skill-tag">MCP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🧠</span>
+                        大模型微调
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Transformers</span>
+                        <span class="skill-tag">LoRA / PEFT</span>
+                        <span class="skill-tag">SFT</span>
+                        <span class="skill-tag">DPO</span>
+                        <span class="skill-tag">PPO / GRPO</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🔍</span>
+                        RAG 系统
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">BM25</span>
+                        <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">Embedding</span>
+                        <span class="skill-tag">Reranker</span>
+                        <span class="skill-tag">Chunk</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">vLLM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">研究项目</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-date">2026.2 - 2026.4</span>
+                        <span class="project-badge">核心项目</span>
+                    </div>
+                    <h3 class="project-title">FinSearch-RL Agent</h3>
+                    <p class="project-subtitle">Search-R1: LLM + Search + RL</p>
+                    <ul class="project-details">
+                        <li>构建 CoT → RAG 搜索决策链路，模型自主判断何时检索、何时推理</li>
+                        <li>设计 RAG-CoT 数据格式：query + search query + evidence + reasoning + answer</li>
+                        <li>SFT + GRPO 训练 Qwen2.5-3B，支持 reason/search/information/answer 多动作 rollout</li>
+                        <li>设计 reward 机制，基于 top-k evidence 匹配度评估检索/推理质量</li>
+                        <li>RAG+CoT 方案取得 Exact Match EM 15.0%、Numeric EM 64.67% 的优异表现</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>GRPO</span>
+                        <span>RAG</span>
+                        <span>Qwen2.5</span>
+                        <span>CoT</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-date">2025.11 - 2026.01</span>
+                        <span class="project-badge">Agent</span>
+                    </div>
+                    <h3 class="project-title">Geo-Agent</h3>
+                    <p class="project-subtitle">LangGraph + MCP 多智能体系统</p>
+                    <ul class="project-details">
+                        <li>设计多 Agent 调度架构：analyze_query → recall_memory → select_agent → specialist → tools → finalize_memory</li>
+                        <li>集成 Weather / Geo / TravelPlanner / General Agent 四个专业智能体</li>
+                        <li>基于 MCP 协议实现 Function Calling，通过 ToolNode 实现工具调度</li>
+                        <li>实现多层记忆系统：messages + conversation_summary + task_memory</li>
+                        <li>使用 SQLite checkpoint 和 Milvus/SQLite 实现持久化存储</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>LangGraph</span>
+                        <span>MCP</span>
+                        <span>Multi-Agent</span>
+                        <span>Memory</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="publications">
+        <div class="container">
+            <h2 class="section-title">学术论文</h2>
+            <div class="publication-card">
+                <div class="pub-venue">IEEE TGRS</div>
+                <h3 class="pub-title">DROS: Domain-aware Relaxed Orthogonal Subspace Adaptation</h3>
+                <p class="pub-desc">
+                    针对 LoRA/PiSSA 等 PEFT 方法在 domain shift 场景下的 subspace mismatch 问题，
+                    基于 MMSegmentation / MMClassification 框架，通过 covariance SVD 分析设计了 
+                    relaxed orthogonal operator，在光学-SAR 跨域任务上结合 DINOv2 与 MARS 数据集验证了方法有效性。
+                </p>
+                <div class="pub-keywords">
+                    <span>LoRA</span>
+                    <span>Domain Adaptation</span>
+                    <span>Remote Sensing</span>
+                    <span>SVD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="contact-grid">
+                <a href="mailto:luo_han@whu.edu.cn" class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>邮箱</h3>
+                    <p>luo_han@whu.edu.cn</p>
+                </a>
+                <a href="tel:+8618207935068" class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>电话</h3>
+                    <p>(+86) 182 0793 5068</p>
+                </a>
+                <a href="https://github.com/ouc-xuanyu" class="contact-card" target="_blank">
+                    <div class="contact-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <p>github.com/ouc-xuanyu</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 罗晗 · Powered by GitHub Pages</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
