@@ -2,16 +2,16 @@
 
 ## Cursor Cloud specific instructions
 
-This is a minimal static HTML personal homepage (`xuanyu.github.io`) with zero dependencies.
+Static personal homepage for 罗梒, deployed via GitHub Pages.
 
-**Stack:** Plain HTML only — no CSS frameworks, no JavaScript, no build tools, no package manager.
+**Stack:** HTML + CSS + vanilla JS. No package manager, no build step, no dependencies.
 
-**Running the dev server:**
-```bash
-python3 -m http.server 8080
-```
-This serves `index.html` at http://localhost:8080/.
+**Files:** `index.html` (page structure), `style.css` (styles/animations), `script.js` (nav/scroll interactions), `CNAME` (custom domain `xuanyu.top`).
 
-**Testing:** No automated tests exist. Verify changes by loading the page in a browser.
+**Dev server:** `python3 -m http.server 8080` — serves the site at http://localhost:8080/.
 
-**Lint/Build:** No linter or build step is configured. Validate HTML manually if needed.
+**Testing:** No automated tests. Verify changes by loading the page in a browser (use the `computerUse` subagent for visual checks).
+
+**Lint/Build:** None configured. No linter, no bundler, no build command.
+
+**Custom domain:** `xuanyu.top` is configured via `CNAME` file. DNS must point to GitHub Pages IPs (A records: `185.199.108-111.153`) at the domain registrar. If DNS is not configured, the site is still accessible at `https://ouc-xuanyu.github.io/`.
